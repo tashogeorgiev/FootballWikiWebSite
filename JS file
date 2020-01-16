@@ -1,0 +1,52 @@
+window.addEventListener("load", () => {
+    CSKABanner = new Array('images/Cerniauskas.jpg', 'images/Albentosa.jpg', 'images/Zanev.jpg', 'images/Turitsov.jpg', 'images/Bikel.jpg',
+    'images/Maziku.jpg', 'images/Antov.jpg', 'images/Pinto.jpg', 'images/Malinov.jpg', 'images/Carey.jpg', 'images/Rodrigues.jpg',
+    'images/Smolenski.jpg', 'images/Evandro.jpg', 'images/Henrique.jpg', 'images/Sowe.jpg', 'images/Mitkov.jpg');
+
+    CSKAFootballers = new Array('Vitautas Cerniauskas', 'Raul Albentosa', 'Petar Zanev', 'Ivan Turitsov', 'Janio Bikel', 
+    'Bradley Mazikou','Valentin Antov', 'Ruben Pinto', 'Kristian Malinov', 'Graham Carey', 'Tiago Rodrigues', 'Martin Smolenski', 
+    'Evandro', 'Henrique Rafael', 'Ali Sowe', 'Mitko Mitkov');
+    counter = 0;
+    
+    Var=setInterval(CSKABanners,2000);
+
+    function CSKABanners() {
+        if (document.images) { 
+            console.log(document.images);
+            if (counter==CSKABanner.length) {
+                counter=0;
+            }
+
+            document.getElementById("CSKA_Banner").src=CSKABanner[counter];
+            document.getElementById("CSKA").innerText = CSKAFootballers[counter];
+            counter++;
+        }
+    }
+
+
+    ManUBanner = new Array('images/Romero.png', 'images/Maguire.png', 'images/Lindelof.png', 'images/Bailly.png', 'images/Shaw.png',
+    'images/Wan-Bissaka.png', 'images/Williams.png', 'images/Fred.png', 'images/Pogba.png', 'images/McTominay.png', 
+    'images/Mata.png', 'images/Lingard.png', 'images/James.png', 'images/Rashford.png', 'images/Martial.png', 'images/Greenwood.png',
+    'images/DeGea.png');
+
+    ManUFootballers = new Array('Sergio Romero', 'Harry Maguire', 'Victor Lindelof', 'Eric Bailly','Luke Shaw', 'Aaron Wan-Bissaka', 
+    'Brandon Williams', 'Fred', 'Paul Pogba','Scott McTominay', 'Juan Mata', 'Jesse Lingard', 'Daniel James', 'Marcus Rashford', 
+    'Anthony Martial', 'Mason Greenwood', 'David De Gea');
+
+    counter2 = 0;
+    
+    Var2=setInterval(ManUBanners,2000);
+
+    function ManUBanners() {
+        if (document.images) { 
+            console.log(document.images);
+            if (counter2==ManUBanner.length) {
+                counter2=0;
+            }
+         
+            document.getElementById("ManU_Banner").src=ManUBanner[counter2];
+            document.getElementById("MANU").innerText = ManUFootballers[counter2];
+            counter2++;
+        }
+    }
+});
