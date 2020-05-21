@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Lato";
+  font-weight: 100;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  background-color: rgb(240, 240, 240);
+}
+
+h1,
+h2 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+/* === NAVBAR === */
+.navbar {
+  width: 100vw;
+  height: 70px;
+  background-color: rgb(250, 250, 250);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-box {
+  flex: 1;
+}
+
+.nav-logo {
+  text-align: center;
+}
+
+.nav-logo img {
+  margin-right: 15vw;
+  width: 70px;
+}
+
+.search-box {
+  position: absolute;
+  top: 36px;
+  left: 400px;
+  transform: translate(-50%, -50%);
+  background: #e8e4e3;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.search-box:hover > .search-txt {
+  width: 150px;
+  padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+  background: #e8e4e3;
+}
+
+.search-btn {
+  color: #c22b2b;
+  float: right;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: black;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 20px;
+  width: 0px;
+}
+
+.home-button {
+  font-weight: 700;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.home-button span {
+  color: #c22b2b;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2.5px solid transparent;
+}
+.navbar-links a:hover {
+  border-bottom: 2.5px solid #c22b2b;
+}
+
+.nav-link {
+  padding: 0 12px;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  border-radius: 100px;
+  stroke: black;
+  text-shadow: black;
+}
+/* === NAVBAR === */
+
+/* === PAGE === */
+.FCs-line {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.card {
+  width: 80vw;
+  margin: 5vh 5vw;
+  box-shadow: 10px 60px 10px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
+}
+
+.card:first-of-type {
+  margin-left: 5vw;
+}
+
+.card img {
+  height: 50vh;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+/* === PAGE === */
