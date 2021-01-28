@@ -1,6 +1,6 @@
 # Football Wiki WebSite
 
-### This website show some information about the history of football, interesting facts about the sport and the most successful teams in the world and the current standings in different leagues(the standings are from the time of making the project).
+### This website shows some information about the history of football, interesting facts about the sport and the most successful teams in the world and the current standings in different leagues(the standings are from the time of making the project).
 
 
 ![alt text](https://i.imgur.com/swPcG3m.png)
